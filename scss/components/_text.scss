@@ -1,0 +1,51 @@
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-25 {
+  @include fz-25;
+}
+
+.fz-30 {
+  @include fz-30;
+}
+
+.fz-40 {
+  @include fz-40;
+}
+
+.fz-45 {
+  @include fz-45;
+}

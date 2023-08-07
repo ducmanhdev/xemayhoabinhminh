@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'HBM';
+    src: url('HBM-BoldItalic.eot');
+    src: url('HBM-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('HBM-BoldItalic.woff2') format('woff2'),
+        url('HBM-BoldItalic.woff') format('woff'),
+        url('HBM-BoldItalic.ttf') format('truetype'),
+        url('HBM-BoldItalic.svg#HBM-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HBM';
+    src: url('HBM-Bold.eot');
+    src: url('HBM-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HBM-Bold.woff2') format('woff2'),
+        url('HBM-Bold.woff') format('woff'),
+        url('HBM-Bold.ttf') format('truetype'),
+        url('HBM-Bold.svg#HBM-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HBM';
+    src: url('HBM-Light.eot');
+    src: url('HBM-Light.eot?#iefix') format('embedded-opentype'),
+        url('HBM-Light.woff2') format('woff2'),
+        url('HBM-Light.woff') format('woff'),
+        url('HBM-Light.ttf') format('truetype'),
+        url('HBM-Light.svg#HBM-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HBM';
+    src: url('HBM-Italic.eot');
+    src: url('HBM-Italic.eot?#iefix') format('embedded-opentype'),
+        url('HBM-Italic.woff2') format('woff2'),
+        url('HBM-Italic.woff') format('woff'),
+        url('HBM-Italic.ttf') format('truetype'),
+        url('HBM-Italic.svg#HBM-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HBM';
+    src: url('HBM-Regular.eot');
+    src: url('HBM-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HBM-Regular.woff2') format('woff2'),
+        url('HBM-Regular.woff') format('woff'),
+        url('HBM-Regular.ttf') format('truetype'),
+        url('HBM-Regular.svg#HBM-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

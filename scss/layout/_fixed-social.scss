@@ -1,0 +1,86 @@
+.fixed-social {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 998;
+  @include max-media(768px) {
+    right: 15px;
+  }
+  @include max-media(500px) {
+    position: sticky;
+    top: unset;
+    right: unset;
+    bottom: 0;
+    transform: translateY(0);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: -5px 0 10px rgba(#000, 0.16);
+  }
+
+  li {
+    @include max-media(500px) {
+      width: 20%;
+    }
+
+    & + li {
+      margin-top: 15px;
+      @include max-media(768px) {
+        margin-top: 5px;
+      }
+      @include max-media(500px) {
+        margin-top: 0;
+        border-left: 1px solid #e1e1e1;
+      }
+    }
+
+    a {
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s;
+      background-color: rgba(#fff, 0.25);
+      color: #fff;
+      border-radius: 100%;
+      box-shadow: 0 6px 5px rgba(#000, 0.2);
+      @include max-media(768px) {
+        background-color: #fff;
+        color: $red;
+        width: 40px;
+        height: 40px;
+      }
+      @include max-media(500px) {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        border-radius: 0;
+        background-color: #fff;
+        color: $red;
+        box-shadow: none;
+      }
+
+      &:hover {
+        background-color: $red;
+        color: #fff;
+      }
+    }
+  }
+
+  .header.fixed ~ & {
+    li {
+      a {
+        background-color: #fff;
+        color: $red;
+
+        &:hover {
+          background-color: $red;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

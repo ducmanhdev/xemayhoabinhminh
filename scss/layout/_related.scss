@@ -1,0 +1,42 @@
+.related-nav {
+  padding: 25px 0;
+  border-top: 1px solid rgba(#000, 0.1);
+  border-bottom: 1px solid rgba(#000, 0.1);
+  margin-bottom: 40px;
+  margin-top: 20px;
+  @include fz-25;
+  @include max-media(768px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  @include max-media(500px) {
+    font-size: 18px;
+  }
+  > li {
+    margin-bottom: 15px;
+    a {
+      display: inline-block;
+      transition: .2s;
+      padding-left: 25px;
+      position: relative;
+      font-weight: normal;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/main-decor.svg");
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

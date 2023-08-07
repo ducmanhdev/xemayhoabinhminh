@@ -1,0 +1,49 @@
+.intro-sec {
+  background-color: $red;
+  background-image: url("../images/intro-bg.png");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+
+  .columns {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @include max-media(500px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .column {
+    @include max-media(500px) {
+      width: 100%;
+    }
+  }
+}
+
+.intro-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .intro-icon {
+    width: 60px;
+    @include max-media(768px) {
+      width: 40px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .intro-title {
+    width: calc(100% - 60px);
+    padding-left: 23px;
+    @include fz-25;
+    @include max-media(768px) {
+      padding-left: 15px;
+      font-size: 16px;
+    }
+  }
+}

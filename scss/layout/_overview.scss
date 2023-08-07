@@ -1,0 +1,35 @@
+.overview-wrap {
+  > .columns {
+    > .column {
+      width: 50%;
+      @include max-media(600px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .overview-title {
+    @include fz-20;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .overview-desc {
+    margin-bottom: 15px;
+  }
+
+  .overview-img {
+    margin-top: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

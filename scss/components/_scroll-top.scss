@@ -1,0 +1,32 @@
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  z-index: 998;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: $red;
+  border: 1px solid $red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 rgba(#000, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.2s;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: $red;
+  }
+}

@@ -1,0 +1,46 @@
+.spec-table {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  table {
+    width: 100%;
+
+    tr {
+      &:nth-child(odd) {
+        background-color: #fff;
+      }
+    }
+
+    th, td {
+      padding: 11.5px 25px;
+      @include max-media(768px) {
+        padding: 11.5px 15px;
+      }
+    }
+
+    th {
+      font-weight: normal;
+      text-align: left;
+    }
+
+    td {
+      text-align: right;
+    }
+  }
+}

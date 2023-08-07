@@ -1,0 +1,27 @@
+.dm-loading {
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.8) url(../images/loading.svg) center center / 100px no-repeat;
+    z-index: 9;
+  }
+
+  &.dm-loading-hide {
+    &::after {
+      animation: hide 1s forwards;
+    }
+  }
+
+  @keyframes hide {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.blog-detail-sec {
+  padding-top: 45px;
+}
+
+.blog-detail {
+  &-img {
+    margin-bottom: 25px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-date {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    margin-bottom: 10px;
+
+    > img {
+      width: 16px;
+      height: auto;
+      margin-right: 9px;
+    }
+  }
+
+  &-title {
+    @include fz-35;
+    font-weight: bold;
+  }
+
+  &-share {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-top: 15px;
+    border-top: 1px solid $red;
+
+    &-title {
+      margin-right: 11px;
+      font-weight: bold;
+    }
+
+    &-social {
+
+    }
+  }
+}

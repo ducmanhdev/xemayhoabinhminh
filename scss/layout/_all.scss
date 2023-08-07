@@ -1,0 +1,21 @@
+body {
+  font-family: "HBM", sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  &:hover {
+    color: $red;
+  }
+}
+
+::selection {
+  background-color: $red;
+  color: #fff;
+}
+
+html {
+  overflow-x: hidden;
+}

@@ -1,0 +1,179 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: $red;
+  color: #fff;
+  outline: 0;
+  margin-top: 0;
+  transform: translateY(-50%);
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+
+  &::after {
+    font-family: FontAweSome;
+    font-size: 20px;
+  }
+}
+
+.swiper-button-prev {
+  left: -64px;
+
+  &::after {
+    content: "\f104";
+  }
+}
+
+.swiper-button-next {
+  right: -64px;
+
+  &::after {
+    content: "\f105";
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 35px;
+  font-size: 0;
+  @include max-media(768px) {
+    margin-top: 15px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0 7.5px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: rgba(#000, 0.1);
+    border-radius: 100%;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $red;
+
+  &::before {
+    background-color: #fff;
+  }
+}
+
+.swiper-wrapper {
+  margin: -15px;
+  width: auto;
+
+  .swiper-slide {
+    padding: 15px;
+    height: auto;
+  }
+}
+
+.swiper-button-wrap {
+  display: flex;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+  }
+
+  .swiper-button-next {
+    margin-left: 5px;
+  }
+}
+
+.is-slider {
+  position: relative;
+
+  * {
+    outline: none;
+  }
+
+  &.swiper-nav {
+    .swiper-pagination {
+      display: none;
+    }
+
+    @include max-media(1200px) {
+
+      .swiper-pagination {
+        display: block;
+      }
+    }
+  }
+
+  &.swiper-pag {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+
+  &.swiper-pag-inside {
+    .swiper-pagination {
+      position: absolute;
+      bottom: 30px;
+      margin-top: 0;
+    }
+  }
+
+  &.swiper-no-controls {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
+  @include max-media(1200px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}
+
+.swiper-4 {
+  .swiper-slide {
+    width: 25%;
+    @include max-media(1024px) {
+      width: calc(100% / 3);
+    }
+    @include max-media(768px) {
+      width: 50%;
+    }
+    @include max-media(500px) {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-3 {
+  .swiper-slide {
+    width: calc(100% / 3);
+    @include max-media(600px) {
+      width: 50%;
+    }
+    @include max-media(500px) {
+      width: 100%;
+    }
+  }
+}

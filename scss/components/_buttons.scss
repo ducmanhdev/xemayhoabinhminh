@@ -1,0 +1,84 @@
+.main-btn {
+  display: inline-block;
+  appearance: none;
+  font: inherit;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: 0.2s;
+  text-align: center;
+  background-color: $red;
+  background-position-x: 0;
+  color: #fff;
+  padding: 10.5px 44px;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  @include max-media(768px) {
+    padding: 10.5px 30px;
+  }
+
+  &:hover {
+    background-color: $red-darker;
+    color: #fff;
+  }
+
+  &.lg-btn {
+    padding: 17px 65px;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    @include max-media(768px) {
+      padding: 10.5px 40px;
+    }
+  }
+
+  &.red-darker-btn {
+    background-color: $red-darker;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+
+  &.shadow-btn {
+    box-shadow: 10px 10px 30px rgba(#000, 0.16);
+  }
+
+  &.full-btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  &.white-btn {
+    background-color: #fff;
+    color: $red;
+
+    &:hover {
+      background-color: $red-darker;
+      color: #fff;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    &,
+    &:hover {
+      cursor: not-allowed;
+      background-color: #d8d8d8;
+      color: #9b9b9b;
+    }
+  }
+}
+
+.readmore-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .2s;
+
+  .fa {
+    color: $red;
+    margin-left: 6px;
+  }
+}

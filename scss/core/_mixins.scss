@@ -1,0 +1,144 @@
+@mixin max-media($point) {
+  @media screen and (max-width: $point) {
+    @content;
+  }
+}
+
+@mixin both-media($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin min-media($point) {
+  @media screen and (min-width: $point) {
+    @content;
+  }
+}
+
+@mixin line-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@mixin clear-fix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin zoom-circle-hover {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      animation: zoom-circle 0.75s;
+    }
+  }
+  @keyframes zoom-circle {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      width: 200%;
+      height: 200%;
+      opacity: 0;
+    }
+  }
+}
+
+@mixin fade-hover {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#fff, 0.2);
+    transition: .2s;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin fz-65 {
+  font-size: 65px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 38px;
+  }
+}
+
+@mixin fz-45 {
+  font-size: 45px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 30px;
+  }
+}
+
+@mixin fz-40 {
+  font-size: 40px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 28px;
+  }
+}
+
+@mixin fz-30 {
+  font-size: 30px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 24px;
+  }
+}
+
+@mixin fz-35 {
+  font-size: 35px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 26px;
+  }
+}
+
+@mixin fz-25 {
+  font-size: 25px;
+  line-height: 1.3;
+  @include max-media(768px) {
+    font-size: 20px;
+  }
+}
+
+@mixin fz-20 {
+  font-size: 20px;
+  line-height: 1.3;
+}

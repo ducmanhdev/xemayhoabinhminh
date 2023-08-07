@@ -1,0 +1,45 @@
+.props-tab-links {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $red;
+  font-size: 16px;
+  text-align: center;
+  @include max-media(600px) {
+    background-color: rgba($red, 0.2);
+  }
+
+  > li {
+    width: 25%;
+    padding: 13px 15px;
+    transition: .2s;
+    @include max-media(768px) {
+      width: calc(100% / 3);
+    }
+    @include max-media(600px) {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $red;
+    }
+
+    &.active {
+      background-color: $red;
+      color: #fff;
+      font-weight: bold;
+      transition: .2s;
+    }
+  }
+}
+
+.props-tab-contents {
+  padding: 35px 70px 70px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid $red;
+  @include max-media(1024px) {
+    padding: 35px;
+  }
+  @include max-media(768px) {
+    padding: 30px;
+  }
+}

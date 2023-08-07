@@ -1,0 +1,27 @@
+import createScrollTop from "./modules/CreateScrollTop.js";
+import createSwiper from "./modules/CreateSwiper.js";
+import createDropdownArrow from "./modules/CreateDropdownArrow.js";
+import createFixedHeader from "./modules/CreateFixedHeader.js";
+import toggleMobileMenu from "./modules/ToggleMobileMenu.js";
+import wrapMonaMedia from "./modules/WrapMonaMedia.js";
+import createAos from "./modules/CreateAos.js";
+import createToggle from "./modules/createToggle.js";
+import createTabs from "./modules/CreateTabs.js";
+import createPopup from "./modules/CreatePopup.js";
+import createGallery from "./modules/CreateGallery.js";
+import createSelect2 from "./modules/CreateSelect2.js";
+import createChangeLocation from "./modules/CreateChangeLocation.js";
+
+createScrollTop();
+createSwiper();
+createDropdownArrow();
+createFixedHeader();
+toggleMobileMenu();
+wrapMonaMedia();
+createAos();
+createToggle();
+createTabs();
+createPopup();
+createGallery();
+createSelect2();
+createChangeLocation();

@@ -1,0 +1,16 @@
+.leave-contact-form {
+  .f-group {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-btn {
+    margin-top: 25px;
+    @include max-media(768px) {
+      margin-top: 0;
+    }
+  }
+}

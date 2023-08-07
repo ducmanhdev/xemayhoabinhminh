@@ -1,0 +1,32 @@
+.breadcrumb-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 25px;
+  font-size: 16px;
+  border-bottom: 1px solid $red;
+
+  li {
+    &::after {
+      content: ">";
+      padding: 0 6px;
+    }
+
+    &:last-child {
+      color: $red;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumb-sec-2 {
+  padding: 10px 0;
+  background-color: #f6f6f6;
+
+  .breadcrumb-nav {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
